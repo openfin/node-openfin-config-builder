@@ -1,0 +1,16 @@
+{
+    "startup_app": {
+        "name": "",
+        "url": "",
+        "uuid": ""
+    },
+    "runtime": {
+        "arguments": "",
+        "version": ""
+    },
+    "shortcut": {
+        "company": "OpenFin",
+        "description": "Openfin POC",
+        "name": "Openfin POC"
+    }
+}

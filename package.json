@@ -1,0 +1,35 @@
+{
+  "name": "openfin-config-builder",
+  "version": "0.0.1",
+  "description": "Node.js tool that builds/updates OpenFin config files",
+  "homepage": "http://www.openfin.co",
+  "author": {
+    "name": "Ricardo de Pena",
+    "email": "ricardo.depena@gmail.com",
+    "url": "http://www.openfin.co"
+  },
+  "repository": "git://github.com/openfin/node-openfin-config-builder",
+  "license": "MIT",
+  "keywords": [
+    "openfin-config-builder",
+    "OpenFin"
+  ],
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "main": "index.js"
+}
