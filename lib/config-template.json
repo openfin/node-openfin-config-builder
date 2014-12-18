@@ -1,12 +1,14 @@
 {
     "startup_app": {
-        "name": "",
-        "url": "",
-        "uuid": ""
+        "name": "OpenfinPOC",
+        "description": "OpenFin POC",
+        "url": "http://www.openfin.co",
+        "uuid": "",
+        "autoShow" : true
     },
     "runtime": {
         "arguments": "",
-        "version": ""
+        "version": "stable"
     },
     "shortcut": {
         "company": "OpenFin",
