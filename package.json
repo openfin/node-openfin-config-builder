@@ -1,6 +1,6 @@
 {
   "name": "openfin-config-builder",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Node.js tool that builds/updates OpenFin config files",
   "homepage": "http://www.openfin.co",
   "author": {
@@ -26,7 +26,10 @@
     "load-grunt-tasks": "^1.0.0",
     "time-grunt": "^1.0.0",
     "grunt-mocha-cli": "^1.11.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "chai": "^1.10.0",
+    "mockery": "^1.4.0",
+    "sinon": "^1.12.2"
   },
   "scripts": {
     "test": "grunt"
