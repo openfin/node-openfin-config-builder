@@ -1,4 +1,4 @@
-#openfin-launcher
+#openfin-config-builder
 [![Build Status](https://travis-ci.org/openfin/node-openfin-config-builder.svg?branch=master)](https://travis-ci.org/openfin/node-openfin-config-builder)
 
 > Node.js tool that builds/updates [OpenFin](http://openfin.co/) application [config files](http://openfin.co/developers.html?url=developers/api/config/overview.html)
