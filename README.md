@@ -20,7 +20,11 @@ configBuilder.create({
             name: 'myAppName',
             url: 'http://www.openfin.co'
         }
-    }, 'app.json');
+    }, 'app.json').then(function (){
+        console.log('Success');
+    }).fail(function (err){
+        console.log(err);
+    });
 
 //you can also update existing configs with updated values
 configBuilder.update({
@@ -28,7 +32,11 @@ configBuilder.update({
             name: 'staging_app',
             url: 'http://staging-app.com'
         }
-    }, 'app.json');
+    }, 'app.json').then(function (){
+        console.log('Success');
+    }).fail(function (err){
+        console.log(err);
+    });
 ```
 ###Application Config Info:
 You can read up on OpenFin application config options on the [OpenFin config file API docs.](http://openfin.co/developers.html?url=developers/api/config/overview.html)
