@@ -34,15 +34,15 @@ module.exports = function(grunt) {
         watch: {
             gruntfile: {
                 files: '<%= jshint.gruntfile.src %>',
-                tasks: ['jshint:gruntfile']
+                tasks: ['jshint:gruntfile', 'jsbeautifier']
             },
             js: {
                 files: '<%= jshint.js.src %>',
-                tasks: ['jshint:js', 'mochacli']
+                tasks: ['jshint:js', 'mochacli', 'jsbeautifier']
             },
             test: {
                 files: '<%= jshint.test.src %>',
-                tasks: ['jshint:test', 'mochacli']
+                tasks: ['jshint:test', 'mochacli', 'jsbeautifier']
             }
         },
         jsbeautifier: {
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
                     wrapLineLength: 0
                 }
             }
-        },
+        }
     });
 
     grunt.registerTask('default', ['jshint', 'mochacli', 'jsbeautifier']);
