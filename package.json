@@ -29,7 +29,8 @@
     "jshint-stylish": "^1.0.0",
     "chai": "^1.10.0",
     "mockery": "^1.4.0",
-    "sinon": "^1.12.2"
+    "sinon": "^1.12.2",
+    "grunt-jsbeautifier": "^0.2.7"
   },
   "scripts": {
     "test": "grunt"
