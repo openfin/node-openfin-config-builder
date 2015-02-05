@@ -1,6 +1,6 @@
 {
   "name": "openfin-config-builder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js tool that builds/updates OpenFin config files",
   "homepage": "http://www.openfin.co",
   "author": {
