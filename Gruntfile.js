@@ -8,6 +8,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         jshint: {
             options: {
+                reporterOutput: "",
                 jshintrc: '.jshintrc',
                 reporter: require('jshint-stylish')
             },
