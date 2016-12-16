@@ -40,7 +40,7 @@ describe('openfin-config-builder node module', function () {
         });
 
         it('should include default values on the config', function (){
-            var template = require('../lib/config-template.json');
+            var template = require('../src/config-template.json');
 
             openfinConfigBuilder.create({}, 'filePath');
 
@@ -48,7 +48,7 @@ describe('openfin-config-builder node module', function () {
         });
 
         it('should combine both default values and passed values into the config', function () {
-            var template = require('../lib/config-template.json'),
+            var template = require('../src/config-template.json'),
             configObject = {
                 intValue: 55,
                 stringValue: "hello",
