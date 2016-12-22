@@ -21,7 +21,7 @@ function create(options, configPath, baseConfig) {
         });
 
     //add a random uuid if none exists:
-    if (!config.startup_app.uuid) {
+    if (config.startup_app && !config.startup_app.uuid) {
         config.startup_app.uuid = config.startup_app.name + '-' + Math.random().toString(36).substring(2);
     }
 

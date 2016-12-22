@@ -1,6 +1,6 @@
 'use strict';
-var configBuilder = require('./lib/config-builder.js'),
-    configUpdater = require('./lib/config-updater.js');
+var configBuilder = require('./src/config-builder.js'),
+    configUpdater = require('./src/config-updater.js');
 
 module.exports = {
     create: configBuilder.create,
