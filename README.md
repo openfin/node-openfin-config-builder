@@ -41,7 +41,7 @@ configBuilder.update({
     });
 ```
 ###Application Config Info:
-You can read up on OpenFin application config options on the [OpenFin config file API docs.](http://openfin.co/developers.html?url=developers/api/config/overview.html)
+You can read up on OpenFin application config options on the [OpenFin config file API docs.](https://openfin.co/application-config/)
 
 ## License
 
