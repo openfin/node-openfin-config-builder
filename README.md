@@ -1,4 +1,4 @@
-#openfin-config-builder
+# openfin-config-builder
 [![Build Status](https://travis-ci.org/openfin/node-openfin-config-builder.svg?branch=master)](https://travis-ci.org/openfin/node-openfin-config-builder)
 
 OpenFin-Config-Builder is a Node.js module that automates creating and updating [OpenFin](http://openfin.co/) application config files. You can read up on application config options on the [OpenFin config file API docs](https://openfin.co/application-config/).
@@ -40,7 +40,7 @@ configBuilder.update({
         console.log(err);
     });
 ```
-###Application Config Info:
+### Application Config Info:
 You can read up on OpenFin application config options on the [OpenFin config file API docs.](https://openfin.co/application-config/)
 
 ## License
