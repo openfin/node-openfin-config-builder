@@ -4,8 +4,16 @@ var configWritter = require('./config-writter'),
     _ = require('lodash'),
     template = require('./config-template.json');
 
-function create(options, configPath, baseConfig) {
-    var config = baseConfig || template;
+function getIndentStyle(options) {
+    if (options == null || options.indent == null) {
+        return '    ';
+    }
+    return options.indent;
+}
+
+function create(options, configPath, baseConfig, indentOptions) {
+    var config = baseConfig || template,
+        indentStyle = getIndentStyle(indentOptions);
 
     //extend config the options object
     _.chain(options)
@@ -25,7 +33,7 @@ function create(options, configPath, baseConfig) {
         config.startup_app.uuid = config.startup_app.name + '-' + Math.random().toString(36).substring(2);
     }
 
-    return configWritter.write(config, configPath);
+    return configWritter.write(config, configPath, indentStyle);
 }
 
 module.exports = {

@@ -3,7 +3,8 @@
 var configBuilder = require('./config-builder.js'),
     fs = require('fs'),
     path = require('path'),
-    Q = require('q');
+    Q = require('q'),
+    detectIndent = require('detect-indent');
 
 function update(options, configPath) {
     //update app.json with user propmts
@@ -16,9 +17,12 @@ function update(options, configPath) {
                 if (err) {
                     deffered.reject(new Error(err));
                 }
-                var appConfig = JSON.parse(data);
 
-                deffered.resolve(configBuilder.create(options, configPath, appConfig));
+                var dataStr = data.toString('utf8'),
+                    appConfig = JSON.parse(dataStr),
+                    indentOptions = detectIndent(dataStr);
+
+                deffered.resolve(configBuilder.create(options, configPath, appConfig, indentOptions));
             });
         } else {
             deffered.reject(new Error('File not found in: ' + configFilePath));
