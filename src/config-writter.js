@@ -4,11 +4,11 @@ var fs = require('fs'),
     path = require('path'),
     Q = require('q');
 
-function write(config, configPath) {
+function write(config, configPath, indentStyle) {
     var configFilePath = path.resolve(configPath),
         deffered = Q.defer();
 
-    fs.writeFile(configFilePath, JSON.stringify(config, null, '    '), function(err) {
+    fs.writeFile(configFilePath, JSON.stringify(config, null, indentStyle), function(err) {
         if (err) {
             deffered.reject(new Error(err));
         } else {
